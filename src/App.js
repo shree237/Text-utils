@@ -3,7 +3,7 @@ import './App.css';
 import Alert from './components/Alert';
 import Navbar from './components/Navbar';
 import Textform from './components/Textform';
-// import About from './components/About';
+
 import React,{useState} from 'react';
 // import {BrowserRouter as Router,Route,Link,Routes} from "react-router-dom";
 
@@ -31,7 +31,6 @@ const showAlert = (message, type)=>{
 const toggleMode = ()=> {
   if(mode==='light'){
     setMode('dark')
-    // document.body.style.backgroundColor = '#35383b'
     document.body.style.backgroundColor = '#042743'
     showAlert('dark mode is enabled', 'success')
   }
